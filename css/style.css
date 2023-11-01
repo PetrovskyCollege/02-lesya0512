@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playpen Sans', cursive;
+    background-color: #E0EDF3;
+    margin-left: 155px;
+}
+
+input {
+    border: none;
+    width: 468px;
+    height: 84px;
+    border-radius: 5px;
+    background-color: #C5C1B8;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+input[type=radio] {
+    width: 15px;
+    height: 15px;
+}
+
+button {
+    border: none;
+    width: 178px;
+    height: 42px;
+    background-color: #C5C1B8;
+}
+
+
