@@ -2,50 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Title</title>
+    <title>Document</title>
 </head>
 <body>
+<header>
+    <div class="right">
+        <img src="../image/logo.svg" alt="">
+    </div>
+</header>
 
-<form action="reg.php" method="POST">
-    <div class="form-item">
-        <label for="mail">E-mail</label> <br>
-        <input type="email" name="mail" id="mail" placeholder="E-mail">
-    </div>
-    <br>
-    <div class="form-item">
-        <label for="login">Login</label> <br>
-        <input type="text" name="login" id="login" placeholder="Login">
-    </div>
-    <br>
-    <div class="form-item">
-        <label for="password">Password</label> <br>
-        <input type="password" name="password" id="password" placeholder="Password">
-    </div>
-    <br>
-    <div class="form-item">
-        <label for="birthday">Date of birthday</label> <br>
-        <input type="date" name="birthday" id="birthday">
-    </div>
-    <br>
-    <div class="form-item">
-        <input type="radio" id="sex" name="sex" value="man"/>
-        <label for="sex">man</label> 
-        <input type="radio" id="sex" name="sex" value="man"/>
-        <label for="sex">woman</label> 
-    </div>
-    <br>
-    <button type="submit">Отправить</button>
-</form>
+<div class="container">
 
+    <h2>check films позволяет хранить воспоминания и впечатления о всех фильмах, которые вы смотрите</h2>
+
+    <form action="" method="post">
+
+    <div class="form-item">
+        <input type="email" name="email" id="email" placeholder="e-mail">
+        <input type="text" name="login" id="login" placeholder="логин">
+        <input type="password" name="password" id="password" placeholder="пароль">
+
+        <button type="submit">Зарегистрироваться</button>
+
+    </div>
+
+    </form>
+
+    <h3>Уже есть аккаунт?? <br> <a href="auto.php">Войти</a></h3>
+
+</div>
+    
+</body>
 </html>
 
 <?php
 if (isset($_GET["login"])) {
-    echo "<h2>Привет, " . $_GET["login"] . "! </h2>";
+    echo "<h2>вы авторизованны, " . $_GET["login"] . "! </h2>";
 }
 
 if (isset($_POST["login"])) {
     echo "<h2>Привет, " . $_POST["login"] . "! </h2>";
 }
-
