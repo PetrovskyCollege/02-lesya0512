@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Fredoka:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anonymous Pro', monospace;
+    background-image: url("../image/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    margin: 25px 45px;
+}
+
+.container {
+    width: 988px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+h2, h3 {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+a {
+    color: #000000;
+}
+
+input {
+    margin-top: 37px;
+    font-family: 'Anonymous Pro', monospace;
+    border: none;
+    width: 468px;
+    height: 84px;
+    background-color: rgba(105, 145, 109, 0.90);
+    color: #000000;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+button {
+    font-family: 'Anonymous Pro', monospace;
+    width: 245px;
+    height: 57px;
+    background: rgba(105, 145, 109, 0.90);
+    border: none;
+}
+
+.btn {
+    margin: 30px auto;
+}
+
+.form-item-reg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
